@@ -1,5 +1,5 @@
 <fable>
-  <config font-family="Poppins" />
+  <config font-family="Poppins />
   <property name="pontuacao" default="0" />
   <property name="visitante" default="Aventureiro" />
   <page id="welcome" bg_color="#2a5d31" bg_music="osts-retro-forest.mp3">
