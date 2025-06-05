@@ -1,15 +1,10 @@
-<!-- Arquivo principal da fabula - define configuracoes globais e estrutura -->
 <fable>
-  <!-- Configuracao global da fonte para toda a fabula -->
   <config font-family="Poppins" />
 
-  <!-- Propriedades globais - variaveis que persistem entre paginas -->
   <property name="pontuacao" default="0" />
   <property name="visitante" default="Aventureiro" />
 
-  <!-- Pagina de boas-vindas com cenario da floresta -->
   <page id="welcome" bg_color="#2a5d31" bg_music="osts-retro-forest.mp3">
-    <!-- Titulo principal centralizado -->
     <agent
       id="titulo_principal"
       x="400"
@@ -31,7 +26,6 @@
       animation="typewriter"
     />
 
-    <!-- Elementos decorativos da floresta -->
     <agent
       id="arvore_esquerda"
       x="50"
@@ -61,7 +55,6 @@
       animation="slide-right"
     />
 
-    <!-- Chao feito com tiles da floresta -->
     <fab-for each="i in 0..19" index="idx">
       <agent
         id="tile-chao-$i"
@@ -73,7 +66,6 @@
       />
     </fab-for>
 
-    <!-- Segunda fileira do chao para mais consistencia -->
     <fab-for each="i in 0..19" index="idx">
       <agent
         id="tile-chao2-$i"
@@ -85,7 +77,6 @@
       />
     </fab-for>
 
-    <!-- Botao interativo para demonstrar funcionalidade -->
     <agent
       id="botao_explorar"
       x="400"
@@ -110,7 +101,6 @@
       />
     </fab-if>
 
-    <!-- Informacoes de ajuda -->
     <agent
       id="dica"
       x="400"
